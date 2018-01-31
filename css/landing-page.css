@@ -17,7 +17,7 @@ eafc40
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   background-color: #f4f5f6;  
-  background: url("../img/background.jpg") no-repeat center center fixed;
+  background: url("../img/background2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -178,6 +178,18 @@ header.masthead {
     top: 0;
     left: 0;
     opacity: 0.3; }
+
+
+.display-5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.display-6 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
 
 footer.footer {
   background-color: #f4f5f6;
