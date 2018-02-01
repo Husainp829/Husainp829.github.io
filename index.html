@@ -27,7 +27,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
+      <div class="container" style="margin: 0 auto;">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="s6.png" style="max-width: 120px;max-height: 50px;"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -39,7 +39,7 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#announcements">Events</a>
+              <a class="nav-link js-scroll-trigger" href="#events">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -52,9 +52,9 @@
     <!-- Masthead -->
     <header class="masthead text-white text-center" id="page-top" >
       <div class="overlay"></div>
-      <div class="container">
+      <div class="container-fluid" style="width: 100%">
         <div class="row">
-          <div class="col-xl-9 mx-auto">
+          <div class="col-xl-9 col-xs-9 mx-auto">
             <h1 class="mb-4" style="text-shadow: 0 5px 7px rgba(0,0,0,10); color: #fff;">Saifee Events</h1>
             <h3 class="mb-3" style="text-shadow: 0 5px 7px rgba(0,0,0,10);">Knowledge is prolific, when it brings people together.</h3>
           </div>
@@ -65,9 +65,9 @@
     </header>
 
     <section class="intro text-center" style="background-color: #e9e7e9" id="about">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 col-xs-12">
               <h2 class="display-7 intro-header">About Us</h3>
               <p class="lead mb-0">Knowledge, blended with the right decision making skills, has enormous power. It can provide the success recipe to bridge the gap between your business needs and ongoing market requirements. <b>Saifee</b> is derived from the Arabic word <b>"Saif"</b> which means a sword. At Saifee, we aim at giving you the mighty edge you need in the cognitive era by providing the knowledge and insight needed to solve business challenges.</p>
           </div>
@@ -105,7 +105,7 @@
       </div>
     </section> -->
 
-    <section id="events">
+    <section>
       <div class="container-fluid" style="padding-top: 6rem; padding-bottom: 1rem; background-color: transparent;">
         <div class="row">
           <div class="col-lg-12" style="color: white">
@@ -124,7 +124,7 @@
           </div>
           <div class="col-md-6 order-1">
             <div class="p-5"><center>
-              <h4 class="display-4">Conferences</h4>
+              <h4 class="display-8">Conferences</h4>
               <p>Saifee Business Events constantly invests in thorough research by connecting with global industry practitioners and thought leaders to curate events that address business needs and challenges, explore and understand new trends and technologies to bring you the best practices and methodologies. We provide an opportunity to establish business relations, enhance your brand awareness and recognition as well as to find international network for future collaborations.</p></center>
             </div>
           </div>
@@ -141,7 +141,7 @@
 		  </div>
 		  <div class="col-md-6">
 		    <div class="p-5" style="color: white;"><center>
-		      <h4 class="display-4">Trainings</h4>
+		      <h4 class="display-8">Trainings</h4>
 		      <p>We choose internationally renowned experts and leading certified trainers that aids your career and personal development via industry recognised certifications and other programs. Saifee also offers personalised in-house training courses that specifically address an organisation’s requirements.</p></center>
 		    </div>
 		  </div>
@@ -159,7 +159,7 @@
           </div>
           <div class="col-md-6 order-1">
             <div class="p-5"><center>
-              <h4 class="display-4">Curated Events</h4>
+              <h4 class="display-8">Curated Events</h4>
               <p>SAIFEE also delivers bespoke seminars and conferences that are aimed just for your clientele. We work with you to understand your event objective that helps us build the conference program and get the required delegates for your team of speakers at the event.</p></center>
             </div>
           </div>
@@ -204,9 +204,26 @@
     </section> -->
 
     <!-- Testimonials -->
-    <section class="testimonials text-center" id="announcements" style="background-color: #787878;">
-      <div class="container" style=" color: white;" >
-        <h2 class="mb-5 display-7">Announcements</h2>
+        <style type="text/css">
+            .forlaptop{
+                display:none;
+            }
+            .formobile{
+                    display: block;
+                }
+
+            @media (min-width: 968px){
+                .formobile{
+                    display: none;
+                }
+                .forlaptop{
+                    display: block;
+                }
+            }
+            
+        </style>
+      <div class="testimonials text-center forlaptop" id="events" style=" color: white; background-color: #787878;" >
+        <h2 class="mb-5 display-7">Upcoming Events</h2>
         <div class="row">
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
@@ -231,7 +248,55 @@
           </div>
         </div>
       </div>
-    </section>
+    
+    <div id="events" class="testimonials text-center carousel slide formobile" data-ride="carousel" style="background-color: #787878; color: white;" >
+        <div>
+        <h2 class="mb-5 display-7">Upcoming Events</h2>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#events" data-slide-to="0" class="active"></li>
+            <li data-target="#events" data-slide-to="1"></li>
+            <li data-target="#events" data-slide-to="2"></li>
+          </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="img/3.jpg" alt="">
+                    <h5 class="display-5">Margaret E.</h5>
+                    <p class="mb-0 display-5">"This is fantastic! Thanks so much guys!"</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="img/2.jpg" alt="">
+                    <h5 class="display-5">Margaret E.</h5>
+                    <p class="mb-0 display-5">"This is fantastic! Thanks so much guys!"</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="img/1.jpg" alt="">
+                    <h5 class="display-5">Margaret E.</h5>
+                    <p class="mb-0 display-5">"This is fantastic! Thanks so much guys!"</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="https://picsum.photos/300/300" alt="">
+                    <h5 class="display-5">Margaret E.</h5>
+                    <p class="mb-0 display-5">"This is fantastic! Thanks so much guys!"</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href=".formobile" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href=".formobile" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
     <!-- Call to Action -->
     <section class="call-to-action text-white text-center" id="contact">
