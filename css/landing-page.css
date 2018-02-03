@@ -18,10 +18,10 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   background-color: #f4f5f6;  
   background: url("../img/background.jpg") fixed no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; 
   
 }
 
