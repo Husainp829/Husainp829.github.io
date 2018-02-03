@@ -17,7 +17,7 @@ eafc40
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   background-color: #f4f5f6;  
-  background: url("../img/background.jpg") no-repeat center center fixed;
+  background: url("../img/background1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -161,10 +161,16 @@ header.masthead {
 .formobile{
         display: block;
     }
+.formobile1{
+      display: block;
+    }
 
 @media (min-width: 968px){
     .formobile{
         display: none;
+    }
+    .formobile1{
+      display: none;
     }
     .forlaptop{
         display: block;
