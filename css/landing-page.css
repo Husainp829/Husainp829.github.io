@@ -150,11 +150,22 @@ header.masthead {
       font-size: 5rem; }
 
 .intro {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #2b2b3a; }
-  .intro-header {
-    padding-bottom: 3rem;}
+
+.aboutuscontent {
+  text-align:justify; 
+  text-align-last: center;
+}
+@media(min-width: 768px){
+  .aboutuscontent{
+    text-align:justify; 
+    text-align-last: center;
+    font-weight: 300;
+    font-size: 1.25rem;
+  }
+}
 
 .showcase .showcase-text {
   color: #202020;
@@ -193,14 +204,28 @@ header.masthead {
 }
 
 .testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem; 
+  padding-top: 3rem;
+  padding-bottom: 3rem; 
   background-color: #ffffff;}
   .testimonials .testimonial-item {
     max-width: 18rem; }
     .testimonials .testimonial-item img {
       max-width: 12rem;
       box-shadow: 0px 5px 5px 0px #adb5bd; }
+
+.knowmore {
+    margin-top: 1.5rem;
+    font-size: 14px;
+    padding: 11px;
+    text-transform: uppercase;
+    background: white;
+    color: #0091cf;
+    border-color: #0091cf;
+    border-radius: 10px; }
+ .knowmore:focus, .knowmore:hover {
+      color: white;
+      border-color: #0091cf;
+      background-color: #0091cf; }
 
 .call-to-action {
   position: relative;
@@ -240,6 +265,11 @@ header.masthead {
 }
 .display-8 {
   font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.display-9 {
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.2;
 }
