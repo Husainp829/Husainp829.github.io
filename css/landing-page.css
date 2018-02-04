@@ -204,7 +204,8 @@ header.masthead {
 
 .call-to-action {
   position: relative;
-    
+  background: url("../img/backgroundm.jpg") no-repeat center;
+  background-size: cover; 
   padding-top: 7rem;
   padding-bottom: 7rem; }
   .call-to-action .overlay {
@@ -215,6 +216,11 @@ header.masthead {
     top: 0;
     left: 0;
     opacity: 0.3; }
+    @media (min-width: 768px) {
+      .call-to-action {
+        background: transparent;
+      }
+    }
 
 
 .display-5 {
