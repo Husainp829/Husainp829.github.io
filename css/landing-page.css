@@ -150,7 +150,7 @@ header.masthead {
       font-size: 5rem; }
 
 .intro {
-  padding-top: 3rem;
+  padding-top: 4.5rem;
   padding-bottom: 3rem;
   background-color: #2b2b3a; }
 
@@ -204,7 +204,7 @@ header.masthead {
 }
 
 .testimonials {
-  padding-top: 3rem;
+  padding-top: 4.5rem;
   padding-bottom: 3rem; 
   background-color: #ffffff;}
   .testimonials .testimonial-item {
@@ -229,7 +229,7 @@ header.masthead {
 
 .call-to-action {
   position: relative;
-  background: url("../img/backgroundm.jpg") no-repeat center;
+  background: transparent;
   background-size: cover; 
   padding-top: 7rem;
   padding-bottom: 7rem; }
@@ -241,11 +241,6 @@ header.masthead {
     top: 0;
     left: 0;
     opacity: 0.3; }
-    @media (min-width: 768px) {
-      .call-to-action {
-        background: transparent;
-      }
-    }
 
 
 .display-5 {
@@ -259,7 +254,7 @@ header.masthead {
   line-height: 1.2;
 }
 .display-7 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -277,43 +272,9 @@ header.masthead {
 footer.footer {
   background-color: #f4f5f6;
   padding-top: 4rem;
-  padding-bottom: 4rem; }
+ }
 
-.read-more-state {
-  display: none;
-}
 
-.read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
-}
-
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 999em;
-}
-
-.read-more-state ~ .read-more-trigger:before {
-  content: 'Show more';
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Show less';
-}
-
-.read-more-trigger {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 .5em;
-  color: #666;
-  font-size: .9em;
-  line-height: 2;
-  border: 1px solid #ddd;
-  border-radius: .25em;
-}
 
 
   
