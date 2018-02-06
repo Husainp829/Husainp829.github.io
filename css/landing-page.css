@@ -20,16 +20,15 @@ body {
 }
 
 @media (min-width: 768px) {
-  body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-  background-color: #f4f5f6; 
-  background: url("../img/background.jpg") fixed no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
-}
-
+    body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    background-color: #f4f5f6; 
+    background: url("../img/background.jpg") fixed no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+  }
 }
 
 
@@ -156,15 +155,14 @@ header.masthead {
 
 .aboutuscontent {
   text-align:justify; 
-  text-align-last: center;
-}
+  text-align-last: center; }
+
 @media(min-width: 768px){
   .aboutuscontent{
     text-align:justify; 
     text-align-last: center;
     font-weight: 300;
-    font-size: 1.25rem;
-  }
+    font-size: 1.25rem;  }
 }
 
 .showcase .showcase-text {
@@ -193,14 +191,11 @@ header.masthead {
 }
 @media (min-width: 968px){
     .formobile{
-        display: none;
-    }
+        display: none; }
     .formobile1{
-      display: none;
-    }
+      display: none; }
     .forlaptop{
-        display: block;
-    }
+        display: block; }
 }
 
 .testimonials {
@@ -243,36 +238,31 @@ header.masthead {
     opacity: 0.3; }
 
 
+
 .display-5 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
-.display-6 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.2;
-}
-.display-7 {
+  line-height: 1.2; } 
+.display-6 {
   font-size: 3rem;
   font-weight: 400;
-  line-height: 1.2;
-}
-.display-8 {
+  line-height: 1.2; }
+.display-7 {
   font-size: 2.5rem;
   font-weight: 400;
-  line-height: 1.2;
-}
-.display-9 {
+  line-height: 1.2; }
+.display-8 {
   font-size: 2rem;
   font-weight: 400;
-  line-height: 1.2;
-}
+  line-height: 1.2; }
+.display-9 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
 
 footer.footer {
   background-color: #f4f5f6;
-  padding-top: 4rem;
- }
+  padding-top: 4rem; }
 
 
 
