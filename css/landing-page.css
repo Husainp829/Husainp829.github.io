@@ -122,7 +122,8 @@ header.masthead {
     opacity: 0.3; }
   header.masthead h1 {
     color: #2C3E50;
-    font-size: 2rem; }
+    font-size: 2rem;
+    font-style: bold; }
   @media (min-width: 768px) {
     header.masthead{
       background: transparent;
@@ -131,7 +132,8 @@ header.masthead {
       padding-top: 12rem;
       padding-bottom: 12rem; }
       header.masthead h1 {
-        font-size: 3rem; } }
+        font-size: 3rem;
+        font-style: bold; } }
 
 
 
