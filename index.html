@@ -42,7 +42,7 @@
 						<a class="nav-link js-scroll-trigger" href="#events">Events</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+						<a class="nav-link js-scroll-trigger" data-toggle="modal" data-target=".contact-modal">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -63,7 +63,12 @@
 			</div>
 		</div>
 	</header>
-
+	<script type="text/javascript">
+		
+		$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+	</script>
 	<section class="intro text-center" style="background-color: #e9e7e9" id="about">
 		<div class="container">
 			<div class="row">
@@ -425,6 +430,88 @@
 		</div>
 	</footer>
 
+
+	<!-- Modal Contact Us -->
+	<div class="modal fade contact-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<center><h5 class="modal-title" id="exampleModalLabel">Contact Us</h5></center>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 col-xs-12">
+								<div class="col-md-8" style="margin: auto;">
+									<form>
+										<div class="row">    
+											<div class="form-group col-lg-6 col-xs-12">First Name *               
+												<input class="form-control" placeholder="First Name" id="" name="" value="" type="text" required="true">    
+											</div>
+											<div class="form-group col-lg-6 col-xs-12">Last Name *       
+												<input class="form-control" placeholder="Last Name" id="" name="" value="" type="text" required="true">    
+											</div>    
+										</div>
+										<div class="row">    
+											<div class="form-group col-lg-6 col-xs-12">Job Title *     
+												<input class="form-control" placeholder="Job Title" id="" name="" value="" type="text" required="true">    
+											</div>
+											<div class="form-group col-lg-6 col-xs-12">Company *      
+												<input class="form-control" placeholder="Company" id="" name="" value="" type="text" required="true">    
+											</div>    
+										</div>
+										<div class="row">    
+											<div class="form-group col-lg-6 col-xs-12">Corporate Email *      
+												<input class="form-control" placeholder="johndoe@xyz.com" id="" name="" value="" type="text" required="true">    
+											</div>
+											<div class="form-group col-lg-6 col-xs-12">Contact Number *       
+												<input class="form-control" placeholder="+xxx-xxx-xxxx" id="" name="" value="" type="text" required="true">    
+											</div>    
+										</div>
+										<div class="form-group">
+											<label for="">Country *</label>
+											<input type="" class="form-control" id="" placeholder="Country">
+										</div>
+										<!-- <div class="form-group">
+											<label for="exampleFormControlSelect1">Example select</label>
+											<select class="form-control" id="exampleFormControlSelect1">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="exampleFormControlSelect2">Example multiple select</label>
+											<select multiple class="form-control" id="exampleFormControlSelect2">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div> -->
+										<div class="form-group">
+											<label for="">Message</label>
+											<textarea class="form-control" id="" rows="3" placeholder="Message"></textarea>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Send message</button>
+				</div>
+			</div>
+		</div>
+		</div>
     <!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
