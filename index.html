@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 
 
-	<link rel="shortcut icon" href="s5.png" style="width=100px;"><title>Saifee Events</title>
+	<link rel="shortcut icon" href="#" style="width=100px;"><title>Ships - Project</title>
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,10 +25,102 @@
 
 <body>
 
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+	<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+<script>
+$.getJSON('https://cdn.rawgit.com/highcharts/highcharts/680f5d50a47e90f53d814b53f80ce1850b9060c0/samples/data/world-population.json', function (data) {
+
+    Highcharts.mapChart('Highcharts', {
+        chart: {
+            borderWidth: 1,
+            map: 'custom/world'
+        },
+
+        title: {
+            text: 'Ships Around the World'
+        },
+
+        subtitle: {
+            text: 'Ships Around the World'
+        },
+
+        legend: {
+            enabled: false
+        },
+
+        mapNavigation: {
+            enabled: true,
+            buttonOptions: {
+                verticalAlign: 'bottom'
+            }
+        },
+
+        series: [{
+            name: 'Countries',
+            color: '#E0E0E0',
+            enableMouseTracking: false
+        }, {
+            type: 'mapbubble',
+            name: 'Ships',
+            joinBy: ['iso-a3', 'code3'],
+            data: [{
+		"code3": "JPN",
+		"z": 126995,
+		"code": "JP"
+	},
+	{
+		"code3": "SGP",
+		"z": 5607,
+		"code": "SG"
+	},
+	{
+		"code3": "CHN",
+		"z": 1378665,
+		"code": "CN"
+	},
+	{
+		"code3": "AUS",
+		"z": 24211,
+		"code": "AU"
+	},
+	{
+		"code3": "IND",
+		"z": 1324171,
+		"code": "IN"
+	},
+	{
+		"code3": "ARE",
+		"z": 9270,
+		"code": "AE"
+	},
+	{
+		"code3": "ZAF",
+		"z": 56015,
+		"code": "ZA"
+	},
+	{
+		"code3": "JOR",
+		"z": 10000,
+		"code": "JO"
+	}],
+            minSize: 6,
+            maxSize: '24%',
+            tooltip: {
+                pointFormat: '{point.properties.hc-a2}: {point.z} thousands'
+            }
+        }]
+    });
+});
+</script>
+
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 		<div class="container" style="margin: 0 auto;">
-			<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="s6.png" style="max-width: 120px;max-height: 50px;"></a>
+			<!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="s6.png" style="max-width: 120px;max-height: 50px;"></a> -->
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				Menu
 				<i class="fa fa-bars"></i>
@@ -38,9 +130,9 @@
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#about">About</a>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#events">Events</a>
-					</li>
+					</li> -->
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" data-toggle="modal" data-target=".contact-modal">Contact</a>
 					</li>
@@ -51,25 +143,28 @@
 
 	<!-- Masthead -->
 	<header class="masthead text-white text-center" id="page-top" >
+
+		
 		<div class="overlay"></div>
 		<div class="container-fluid" style="width: 100%">
-			<div class="row">
+			<div id="Highcharts" class="container-fluid" style="min-height: 700px;"></div>
+			<!-- <div class="row">
 				<div class="col-xl-9 col-xs-9 mx-auto">
 					<h1 class="mb-4" style="text-shadow: 0 5px 7px rgba(0,0,0,10); color: #fff;">Saifee Events</h1>
 					<h3 class="mb-3" style="text-shadow: 0 5px 7px rgba(0,0,0,10);">Knowledge is prolific, when it brings people together.</h3>
 				</div>
 				<div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</header>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		
 		$('#myModal').on('shown.bs.modal', function () {
   $('#myInput').focus()
 })
-	</script>
-	<section class="intro text-center" style="background-color: #e9e7e9" id="about">
+	</script> -->
+	<!-- <section class="intro text-center" style="background-color: #e9e7e9" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-xs-12">
@@ -77,7 +172,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 
@@ -109,7 +204,7 @@
       </div>
     </section> -->
   <!-- What We Do Section -->
-	<section class="forlaptop">
+<!-- 	<section class="forlaptop">
 		<div class="container-fluid" style="padding-top: 3rem; padding-bottom: 3rem; background-color: transparent;">
 			<div class="row">
 				<div class="col-lg-12" style="color: white">
@@ -274,7 +369,7 @@
 
     <!-- Testimonials -->
 
-	<div class="testimonials text-center forlaptop" id="events" style=" background-color: #d7dfe9;" >
+<!-- 	<div class="testimonials text-center forlaptop" id="events" style=" background-color: #d7dfe9;" >
 		<h2 class="mb-5 display-6"><b>Upcoming Events</b></h2>
 		<div class="row">
 			<div class="col-lg-4">
@@ -365,7 +460,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> --> -->
 
     <!-- Footer -->
 	<footer class="footer bg-light" style="background-color: #212529;">
@@ -373,15 +468,15 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-4">
 					<div class="h-100 text-center text-lg-left my-auto">
-						<img src="s6.png" style="max-width: 120px;max-height: 50px; margin-bottom: 2rem;">
+						<!-- <img src="s6.png" style="max-width: 120px;max-height: 50px; margin-bottom: 2rem;"> -->
 						<ul class="list-unstyled">
 							<strong><li>For Enquiries</li></strong>
 							<!-- <li ><a href="tel:+9999999999999">+9999999999999</a></li> -->
-							<li ><a href="mailto:info@saifee-events.com">info@saifee-events.com</a></li>
+							<li ><a href="mailto:info@saifee-events.com"><!-- info@saifee-events.com --></a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-8 col-sm-8">
+				<!-- <div class="col-md-8 col-sm-8">
 					<div class="h-100 text-center text-lg-right my-auto">
 						<div style="margin-bottom: 2rem;">
 							<ul class="list-inline mb-2">
@@ -394,7 +489,7 @@
 								</li>
 								<li class="list-inline-item"><h5> | </h5></li>
 								<li class="list-inline-item">
-									<a data-toggle="modal" data-target=".contact-modal" ><h5>Contact Us</h5></a>
+									<a href="#" data-toggle="modal" data-target=".contact-modal" ><h5>Contact Us</h5></a>
 								</li>
 							</ul>
 						</div>
@@ -418,100 +513,20 @@
 							</ul>
 						</div>
 					</div> 	
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<div class="container-fluid" style="border-top: 2px solid #787878;">
 			<div class="col-lg-6">
 				<div class="h-100 text-center text-lg-left my-auto" style="padding: 1rem; margin-left: auto;">
-					<p class="text-muted small mb-4 mb-lg-0">&copy; Saifee-Events 2017. All Rights Reserved.</p>
+					<p class="text-muted small mb-4 mb-lg-0">&copy; Ship- Project 2017. All Rights Reserved.</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 
 
-	<!-- Modal Contact Us -->
-	<div class="modal fade contact-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<center><h5 class="modal-title" id="exampleModalLabel">Contact Us</h5></center>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12 col-xs-12">
-								<div class="col-md-8" style="margin: auto;">
-									<form>
-										<div class="row">    
-											<div class="form-group col-lg-6 col-xs-12">First Name *               
-												<input class="form-control" placeholder="First Name" id="" name="" value="" type="text" required="true">    
-											</div>
-											<div class="form-group col-lg-6 col-xs-12">Last Name *       
-												<input class="form-control" placeholder="Last Name" id="" name="" value="" type="text" required="true">    
-											</div>    
-										</div>
-										<div class="row">    
-											<div class="form-group col-lg-6 col-xs-12">Job Title *     
-												<input class="form-control" placeholder="Job Title" id="" name="" value="" type="text" required="true">    
-											</div>
-											<div class="form-group col-lg-6 col-xs-12">Company *      
-												<input class="form-control" placeholder="Company" id="" name="" value="" type="text" required="true">    
-											</div>    
-										</div>
-										<div class="row">    
-											<div class="form-group col-lg-6 col-xs-12">Corporate Email *      
-												<input class="form-control" placeholder="johndoe@xyz.com" id="" name="" value="" type="text" required="true">    
-											</div>
-											<div class="form-group col-lg-6 col-xs-12">Contact Number *       
-												<input class="form-control" placeholder="+xxx-xxx-xxxx" id="" name="" value="" type="text" required="true">    
-											</div>    
-										</div>
-										<div class="form-group">
-											<label for="">Country *</label>
-											<input type="" class="form-control" id="" placeholder="Country">
-										</div>
-										<!-- <div class="form-group">
-											<label for="exampleFormControlSelect1">Example select</label>
-											<select class="form-control" id="exampleFormControlSelect1">
-												<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-											</select>
-										</div>
-										<div class="form-group">
-											<label for="exampleFormControlSelect2">Example multiple select</label>
-											<select multiple class="form-control" id="exampleFormControlSelect2">
-												<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-											</select>
-										</div> -->
-										<div class="form-group">
-											<label for="">Message</label>
-											<textarea class="form-control" id="" rows="3" placeholder="Message"></textarea>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Send message</button>
-				</div>
-			</div>
-		</div>
-		</div>
+	<!--  -->
     <!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
